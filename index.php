@@ -2,7 +2,7 @@
 	require_once './src/auth.php';
 	if($_SESSION['usertype'] != 'nodal officer') {
 		echo('<script>alert("You do not have the Permission to Access This Page");
-		window.location = "./index.php";
+		window.location = "./index_admin.php";
 		</script>');
 	}
 ?>
@@ -50,6 +50,7 @@
 				<div class="page-inner">
 					<div class="card" style="height:50vh">
 						<h3 class="mt-5 ml-3">Welcome to One Nation One Data Portal</h3>
+						<a href="./src/logout.php">Logout</a>
 					</div>
 					
 					<!-- Organization Details -->
